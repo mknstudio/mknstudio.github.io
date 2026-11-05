@@ -11,8 +11,8 @@
   --coral: #F97316;
   --coral-text: #FB923C;
   --grad: linear-gradient(120deg, var(--indigo), var(--amethyst));
-  --vitanimo: #2f9e74;
-  --mitoya: #818CF8;
+  --vitanimo: #2A7D6F;
+  --mitoya: #4F7CB8;
   --borne: #F97316;
   --radius: 18px;
   --font-display: "Bricolage Grotesque", system-ui, sans-serif;
@@ -118,6 +118,9 @@ section { padding: 80px 0; }
   padding: 9px 16px; border-radius: 10px; font-size: 15px;
 }
 .soon { font-size: 14px; color: var(--ink-soft); }
+.site-link { font-size: 15px; font-weight: 600; color: var(--ink); text-decoration: none; border-bottom: 1.5px solid var(--line); }
+.site-link:hover { border-color: var(--c); }
+img.app-icon { display: block; object-fit: cover; }
 
 /* Approach */
 .approach { background: var(--bg-soft); color: #EDEBFA; position: relative; overflow: hidden; }
