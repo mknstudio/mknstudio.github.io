@@ -113,6 +113,18 @@
   .role.dark { background: var(--ink); color: #fff; }
   .role.dark p { color: var(--on-ink); }
 
+  /* Tarifs */
+  .pricing { padding-block: 104px; }
+  .pricing .lead { max-width: 720px; margin-bottom: 40px; }
+  .tiers { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; }
+  .tier { background: #fff; border: 1px solid var(--border); border-radius: 24px; padding: 24px; display: flex; flex-direction: column; gap: 8px; }
+  .tier.mise-en-avant { border: 2px solid var(--ink); }
+  .tier .lots { margin: 0; font-weight: 600; color: var(--muted); }
+  .tier .prix { margin: 0; font-family: var(--display); font-weight: 800; font-size: 40px; letter-spacing: -0.02em; }
+  .tier .prix small { font-family: var(--body); font-size: 16px; font-weight: 500; color: var(--muted); }
+  .tier .par-lot { margin: 0; font-size: 14px; color: var(--subtle); }
+  .pricing-notes { margin: 32px 0 0; padding-left: 20px; color: var(--muted); font-size: 16px; line-height: 1.8; }
+
   /* FAQ */
   .faq { padding-block: 104px; }
   .faq .wrap { max-width: 900px; }
@@ -146,7 +158,7 @@
     .hero .wrap { padding-block: 48px 64px; gap: 48px; }
     .lead { font-size: 18px; }
     .ctas .btn { flex: 1 1 100%; }
-    .band .wrap, .features, .roles, .faq { padding-block: 64px; }
+    .band .wrap, .features, .roles, .faq, .pricing { padding-block: 64px; }
     .band h2 { font-size: 32px; }
     .phone { padding: 20px; border-radius: 26px; }
     .p-row { flex-direction: column; }
@@ -171,6 +183,7 @@
     <nav class="nav" aria-label="Navigation principale">
       <a href="#fonctions">Fonctions</a>
       <a href="#roles">Rôles</a>
+      <a href="#tarifs">Tarifs</a>
       <a href="#faq">Questions</a>
       <a class="btn btn-dark" href="#test">Rejoindre le test</a>
     </nav>
@@ -284,6 +297,47 @@
     </div>
   </section>
 
+  <section id="tarifs" class="pricing" aria-labelledby="tarifs-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Tarifs</p>
+        <h2 id="tarifs-title" class="display">Un prix par copropriété, pas par personne.</h2>
+      </div>
+      <p class="lead">Tous les copropriétaires sont inclus, sur le web comme dans l'application. 30&nbsp;jours d'essai gratuit, puis un abonnement annuel souscrit en ligne par le président, résiliable à tout moment.</p>
+      <div class="tiers">
+        <article class="tier">
+          <p class="lots">1 à 2 lots</p>
+          <p class="prix">60&nbsp;€ <small>/ an</small></p>
+          <p class="par-lot">dès 2,50 € par lot et par mois</p>
+        </article>
+        <article class="tier">
+          <p class="lots">3 à 4 lots</p>
+          <p class="prix">110&nbsp;€ <small>/ an</small></p>
+          <p class="par-lot">dès 2,29 € par lot et par mois</p>
+        </article>
+        <article class="tier mise-en-avant">
+          <p class="lots">5 à 6 lots</p>
+          <p class="prix">160&nbsp;€ <small>/ an</small></p>
+          <p class="par-lot">dès 2,22 € par lot et par mois</p>
+        </article>
+        <article class="tier">
+          <p class="lots">7 à 10 lots</p>
+          <p class="prix">230&nbsp;€ <small>/ an</small></p>
+          <p class="par-lot">dès 1,92 € par lot et par mois</p>
+        </article>
+        <article class="tier">
+          <p class="lots">11 à 15 lots</p>
+          <p class="prix">300&nbsp;€ <small>/ an</small></p>
+          <p class="par-lot">dès 1,67 € par lot et par mois</p>
+        </article>
+      </div>
+      <ul class="pricing-notes">
+        <li>À comparer avec un syndic professionnel&nbsp;: souvent plus de 150&nbsp;€ par lot et par an.</li>
+        <li>Plus de 15 lots&nbsp;? <a href="mailto:contact@mknstudio.fr?subject=Mitoya%20%E2%80%94%20plus%20de%2015%20lots">Écrivez-nous</a>.</li>
+      </ul>
+    </div>
+  </section>
+
   <section id="faq" class="faq" aria-labelledby="faq-title">
     <div class="wrap">
       <h2 id="faq-title" class="display">Questions fréquentes</h2>
@@ -302,7 +356,7 @@
         </details>
         <details>
           <summary>Combien ça coûte&nbsp;?</summary>
-          <p>Les tarifs seront annoncés avant la sortie publique.</p>
+          <p>De 60 à 300&nbsp;€ par an selon le nombre de lots, pour toute la copropriété, après 30&nbsp;jours d'essai gratuit. <a href="#tarifs">Voir les tarifs</a>.</p>
         </details>
       </div>
     </div>
