@@ -110,6 +110,7 @@ section { padding: 80px 0; }
 }
 .status { font-size: 12px; font-weight: 600; padding: 5px 11px; border-radius: 999px; border: 1px solid var(--line); color: var(--ink-soft); }
 .status-live { background: var(--c); color: #fff; border-color: transparent; }
+.app-card .kind { flex: none; margin: 4px 0 -10px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-soft); }
 .app-card h3 { font-size: 28px; font-weight: 700; }
 .app-card p { margin: 0; color: var(--ink-soft); flex: 1; }
 .app-links { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
