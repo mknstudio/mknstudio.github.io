@@ -12,3 +12,8 @@ nav.querySelectorAll("a").forEach((a) =>
     toggle.setAttribute("aria-expanded", "false");
   })
 );
+
+// Offre de lancement : l'encart disparaît tout seul après sa date de fin
+document.querySelectorAll('.promo[data-until]').forEach(function (el) {
+  if (new Date() > new Date(el.dataset.until + 'T23:59:59')) el.remove();
+});
