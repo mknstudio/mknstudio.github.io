@@ -130,13 +130,20 @@
           <label for="f-message">Dein Projekt *</label>
           <textarea id="f-message" name="message" required placeholder="Was du machst, was die Website oder das Tool können soll, eine Website, die dir gefällt, was schon vorhanden ist (Logo, Texte, Fotos, Domain)…"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Anfrage vorbereiten</button>
-        <p class="form-note">Beim Klick öffnet sich dein E-Mail-Programm mit der ausgefüllten Anfrage: Du musst sie nur noch senden. Auf dieser Website wird nichts gespeichert.</p>
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="btn btn-primary" data-label="Anfrage senden" data-sending="Wird gesendet…">Anfrage senden</button>
+        <p class="form-note">Deine Angaben werden nur zur Beantwortung deiner Anfrage verwendet. <a href="/de/datenschutz.html">Datenschutz</a></p>
+        <p id="form-error" class="form-error" role="alert" hidden>Das Senden hat nicht geklappt. Versuch es gleich noch einmal oder schreib direkt an <a href="mailto:contact@mknstudio.fr">contact@mknstudio.fr</a>.</p>
         <div id="form-done" class="form-done" hidden>
           <p>Dein E-Mail-Programm hat sich nicht geöffnet? Kopier die Anfrage und schick sie an <a href="mailto:contact@mknstudio.fr">contact@mknstudio.fr</a>.</p>
           <button type="button" data-copy data-ok="Kopiert ✓">Anfrage kopieren</button>
         </div>
       </form>
+      <div id="form-sent" class="form-sent" tabindex="-1" hidden>
+        <h2>Anfrage gesendet, danke!</h2>
+        <p>Du bekommst innerhalb von 48 Stunden eine Antwort an die angegebene Adresse.</p>
+        <a href="/de/" class="btn btn-ghost">Zurück zur Startseite</a>
+      </div>
     </div>
   </main>
 

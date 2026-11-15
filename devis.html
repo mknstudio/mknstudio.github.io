@@ -130,13 +130,20 @@
           <label for="f-message">Ton projet *</label>
           <textarea id="f-message" name="message" required placeholder="Ce que tu fais, ce que le site ou l’outil doit permettre, un site que tu aimes bien, ce que tu as déjà (logo, textes, photos, nom de domaine)…"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Préparer ma demande</button>
-        <p class="form-note">En cliquant, ta messagerie s’ouvre avec la demande pré-remplie : il ne reste qu’à l’envoyer. Rien n’est enregistré sur ce site.</p>
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="btn btn-primary" data-label="Envoyer ma demande" data-sending="Envoi en cours…">Envoyer ma demande</button>
+        <p class="form-note">Tes informations servent uniquement à répondre à ta demande. <a href="/confidentialite.html">Confidentialité</a></p>
+        <p id="form-error" class="form-error" role="alert" hidden>L’envoi n’a pas fonctionné. Réessaie dans un instant, ou écris directement à <a href="mailto:contact@mknstudio.fr">contact@mknstudio.fr</a>.</p>
         <div id="form-done" class="form-done" hidden>
           <p>Ta messagerie ne s’est pas ouverte ? Copie la demande et envoie-la à <a href="mailto:contact@mknstudio.fr">contact@mknstudio.fr</a>.</p>
           <button type="button" data-copy data-ok="Copié ✓">Copier la demande</button>
         </div>
       </form>
+      <div id="form-sent" class="form-sent" tabindex="-1" hidden>
+        <h2>Demande envoyée, merci !</h2>
+        <p>Tu recevras une réponse sous 48 h à l’adresse indiquée.</p>
+        <a href="/" class="btn btn-ghost">Retour à l’accueil</a>
+      </div>
     </div>
   </main>
 

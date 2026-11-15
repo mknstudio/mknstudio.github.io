@@ -256,3 +256,12 @@ img.app-icon { display: block; object-fit: cover; }
 .form-done a { color: var(--coral-text); }
 .services-cta { margin: -24px 0 48px; }
 @media (max-width: 640px) { .form .row { grid-template-columns: 1fr; } }
+.form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.form .btn:disabled { opacity: .6; cursor: wait; transform: none; }
+.form-note a { color: var(--ink-soft); }
+.form-error { margin: 0; padding: 14px 18px; border-radius: 12px; background: color-mix(in srgb, #EF4444 14%, transparent); border: 1px solid color-mix(in srgb, #EF4444 45%, transparent); }
+.form-error a, .form-sent a:not(.btn) { color: var(--coral-text); }
+.form-sent { margin-top: 40px; padding: 32px; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--coral); border-radius: var(--radius); outline: none; }
+.form-sent h2 { font-size: 30px; margin-bottom: 10px; }
+.form-sent p { color: var(--ink-soft); margin: 0 0 24px; }
+.form[hidden], .form-done[hidden], .form-sent[hidden], .form-error[hidden] { display: none; }

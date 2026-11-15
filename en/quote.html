@@ -130,13 +130,20 @@
           <label for="f-message">Your project *</label>
           <textarea id="f-message" name="message" required placeholder="What you do, what the site or tool should do, a website you like, what you already have (logo, copy, photos, domain name)…"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Prepare my request</button>
-        <p class="form-note">When you click, your email app opens with the request filled in: you just need to send it. Nothing is stored on this site.</p>
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="btn btn-primary" data-label="Send my request" data-sending="Sending…">Send my request</button>
+        <p class="form-note">Your details are only used to reply to your request. <a href="/en/privacy.html">Privacy</a></p>
+        <p id="form-error" class="form-error" role="alert" hidden>Sending failed. Please try again in a moment, or write directly to <a href="mailto:contact@mknstudio.fr">contact@mknstudio.fr</a>.</p>
         <div id="form-done" class="form-done" hidden>
           <p>Your email app didn’t open? Copy the request and send it to <a href="mailto:contact@mknstudio.fr">contact@mknstudio.fr</a>.</p>
           <button type="button" data-copy data-ok="Copied ✓">Copy the request</button>
         </div>
       </form>
+      <div id="form-sent" class="form-sent" tabindex="-1" hidden>
+        <h2>Request sent, thank you!</h2>
+        <p>You’ll get a reply within 48 hours at the address you gave.</p>
+        <a href="/en/" class="btn btn-ghost">Back to home</a>
+      </div>
     </div>
   </main>
 
