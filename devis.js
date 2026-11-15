@@ -3,7 +3,7 @@
 // Tant que la clé n'est pas renseignée, repli sur un e-mail pré-rempli (mailto).
 (function () {
   "use strict";
-  var ACCESS_KEY = "WEB3FORMS_ACCESS_KEY"; // à remplacer par la clé reçue de Web3Forms
+  var ACCESS_KEY = "01f6849f-bbc5-4925-bf52-5b1cdb37cce5"; // clé Web3Forms (publique) → contact@mknstudio.fr
   var form = document.getElementById("devis-form");
   if (!form) return;
   var need = form.elements.besoin;
