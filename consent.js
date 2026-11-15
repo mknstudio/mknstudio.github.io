@@ -47,6 +47,26 @@
     });
   }
 
+  var I18N = {
+    fr: {
+      label: "Mesure d'audience",
+      text: "Ce site mesure son audience avec Google Analytics, uniquement si vous l'acceptez. Votre choix est conservé 13 mois.",
+      more: "En savoir plus", href: "/confidentialite.html", deny: "Refuser", accept: "Accepter"
+    },
+    en: {
+      label: "Audience measurement",
+      text: "This site measures its traffic with Google Analytics, only if you agree. Your choice is kept for 13 months.",
+      more: "Learn more", href: "/en/privacy.html", deny: "Decline", accept: "Accept"
+    },
+    de: {
+      label: "Reichweitenmessung",
+      text: "Diese Website misst ihre Besucherzahlen mit Google Analytics, aber nur mit deiner Zustimmung. Deine Wahl wird 13 Monate lang gespeichert.",
+      more: "Mehr erfahren", href: "/de/datenschutz.html", deny: "Ablehnen", accept: "Akzeptieren"
+    }
+  };
+  var lang = (document.documentElement.lang || "fr").slice(0, 2).toLowerCase();
+  var T = I18N[lang] || I18N.fr;
+
   function injectStyles() {
     if (document.getElementById("mkn-consent-style")) return;
     var css =
@@ -72,13 +92,12 @@
     var el = document.createElement("div");
     el.id = "mkn-consent";
     el.setAttribute("role", "dialog");
-    el.setAttribute("aria-label", "Mesure d'audience");
+    el.setAttribute("aria-label", T.label);
     el.innerHTML =
-      "<p>Ce site mesure son audience avec Google Analytics, uniquement si vous l'acceptez. " +
-      'Votre choix est conservé 13 mois. <a href="/confidentialite.html">En savoir plus</a></p>' +
+      "<p>" + T.text + ' <a href="' + T.href + '">' + T.more + "</a></p>" +
       '<div class="mkn-consent-btns">' +
-      '<button type="button" data-v="denied">Refuser</button>' +
-      '<button type="button" data-v="granted">Accepter</button>' +
+      '<button type="button" data-v="denied">' + T.deny + "</button>" +
+      '<button type="button" data-v="granted">' + T.accept + "</button>" +
       "</div>";
     el.addEventListener("click", function (e) {
       var v = e.target && e.target.getAttribute("data-v");
