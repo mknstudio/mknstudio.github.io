@@ -265,3 +265,26 @@ img.app-icon { display: block; object-fit: cover; }
 .form-sent h2 { font-size: 30px; margin-bottom: 10px; }
 .form-sent p { color: var(--ink-soft); margin: 0 0 24px; }
 .form[hidden], .form-done[hidden], .form-sent[hidden], .form-error[hidden] { display: none; }
+
+/* Offre de lancement */
+.promo {
+  display: flex; align-items: center; gap: 16px;
+  max-width: 720px; margin: 0 0 40px; padding: 14px 18px;
+  border: 1.5px solid rgba(249,115,22,.45); border-radius: var(--radius);
+  background: linear-gradient(120deg, rgba(249,115,22,.14), rgba(109,40,217,.18));
+  color: var(--ink); text-decoration: none;
+  transition: transform .2s, border-color .2s;
+}
+.promo:hover { transform: translateY(-2px); border-color: var(--coral); }
+.promo-tag {
+  flex: none; padding: 5px 10px; border-radius: 999px;
+  background: var(--coral); color: #1a0f05;
+  font-size: .78rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+}
+.promo-text { font-size: .98rem; line-height: 1.45; color: var(--ink-soft); }
+.promo-text strong { color: var(--ink); font-weight: 600; }
+.promo-go { flex: none; margin-left: auto; font-size: 1.3rem; color: var(--coral-text); }
+@media (max-width: 600px) {
+  .promo { flex-wrap: wrap; gap: 10px; margin-bottom: 32px; }
+  .promo-go { display: none; }
+}
