@@ -227,3 +227,32 @@ img.app-icon { display: block; object-fit: cover; }
   .logo-word span { display: none; }
   .lang a { min-width: 0; padding: 4px 7px; }
 }
+
+/* Devis */
+.nav a.nav-cta { color: var(--coral-text); }
+.quote { padding: 64px 0 96px; }
+.quote .wrap { max-width: 760px; }
+.quote h1 { font-size: clamp(36px, 6vw, 64px); max-width: none; hyphens: auto; }
+.quote .lead { margin-top: 18px; }
+.form { margin-top: 40px; display: grid; gap: 22px; }
+.form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.field { display: flex; flex-direction: column; gap: 8px; }
+.field label, .field legend { font-weight: 600; font-size: 15px; }
+.field .opt { font-weight: 400; color: var(--ink-soft); }
+.field input, .field select, .field textarea {
+  font: inherit; color: var(--ink); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; width: 100%;
+}
+.field textarea { min-height: 150px; resize: vertical; }
+.field select { appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--ink-soft) 50%), linear-gradient(135deg, var(--ink-soft) 50%, transparent 50%); background-position: calc(100% - 20px) 50%, calc(100% - 14px) 50%; background-size: 6px 6px; background-repeat: no-repeat; padding-right: 40px; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid var(--coral-text); outline-offset: 1px; border-color: transparent; }
+.field [hidden] { display: none; }
+.field-other[hidden] { display: none; }
+.form .btn { border: 0; cursor: pointer; font: inherit; font-weight: 600; justify-self: start; }
+.form-note { font-size: 14px; color: var(--ink-soft); margin: 0; }
+.form-done { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--coral); border-radius: 12px; padding: 18px 20px; }
+.form-done p { margin: 0 0 10px; color: var(--ink-soft); }
+.form-done button { font: inherit; font-weight: 600; color: var(--ink); background: none; border: 1.5px solid var(--line); border-radius: 999px; padding: 8px 16px; cursor: pointer; }
+.form-done a { color: var(--coral-text); }
+.services-cta { margin: -24px 0 48px; }
+@media (max-width: 640px) { .form .row { grid-template-columns: 1fr; } }

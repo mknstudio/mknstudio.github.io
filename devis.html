@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demande de devis — MKN Studio</title>
+  <meta name="description" content="Décris ton projet de site, d'appli ou de maintenance : MKN Studio te répond avec un devis gratuit et sans engagement.">
+  <link rel="canonical" href="https://mknstudio.fr/devis.html">
+  <link rel="alternate" hreflang="fr" href="https://mknstudio.fr/devis.html">
+  <link rel="alternate" hreflang="en" href="https://mknstudio.fr/en/quote.html">
+  <link rel="alternate" hreflang="de" href="https://mknstudio.fr/de/angebot.html">
+  <link rel="alternate" hreflang="x-default" href="https://mknstudio.fr/devis.html">
+  <meta property="og:title" content="Demande de devis — MKN Studio">
+  <meta property="og:description" content="Décris ton projet de site, d'appli ou de maintenance : MKN Studio te répond avec un devis gratuit et sans engagement.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:url" content="https://mknstudio.fr/devis.html">
+  <meta property="og:image" content="https://mknstudio.fr/logo-512.png">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
+  <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="/" class="logo" aria-label="MKN Studio, accueil">
+        <svg class="logo-svg" viewBox="0 0 120 100" aria-hidden="true"><path d="M4 94 L38 14 L72 94 Z" fill="#818CF8" stroke="#818CF8" stroke-width="8" stroke-linejoin="round"/><path d="M44 94 L78 30 L112 94 Z" fill="#A78BFA" fill-opacity="0.92" stroke="#A78BFA" stroke-opacity="0.92" stroke-width="8" stroke-linejoin="round"/><circle cx="96" cy="16" r="10" fill="#F97316"/></svg>
+        <span class="logo-word">MKN<span>studio</span></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+      </button>
+      <nav id="nav" class="nav">
+        <a href="/#applis">Applis</a>
+        <a href="/#realisations">Sites pros</a>
+        <a href="/#approche">Approche</a>
+        <a href="/#contact">Contact</a>
+        <a href="/devis.html" class="nav-cta" aria-current="page">Devis</a>
+      </nav>
+      <nav class="lang" aria-label="Langue">
+        <a href="/devis.html" hreflang="fr" lang="fr" aria-current="true">FR</a>
+        <a href="/en/quote.html" hreflang="en" lang="en">EN</a>
+        <a href="/de/angebot.html" hreflang="de" lang="de">DE</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="quote">
+    <div class="wrap">
+      <h1>Demande de devis</h1>
+      <p class="lead">Décris ton projet en quelques lignes. Le devis est gratuit et sans engagement, réponse sous 48 h.</p>
+
+      <form id="devis-form" class="form" data-subject="Demande de devis" novalidate>
+        <div class="row">
+          <div class="field">
+            <label for="f-nom">Nom et prénom *</label>
+            <input id="f-nom" name="nom" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-societe">Entreprise ou activité <span class="opt">(facultatif)</span></label>
+            <input id="f-societe" name="societe" autocomplete="organization">
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="f-email">E-mail *</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="f-tel">Téléphone <span class="opt">(facultatif)</span></label>
+            <input id="f-tel" name="tel" type="tel" autocomplete="tel">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-besoin">Ton besoin *</label>
+          <select id="f-besoin" name="besoin" required>
+            <option value="">Choisis dans la liste</option>
+              <option>Site vitrine</option>
+              <option>Site avec prise de rendez-vous ou réservation</option>
+              <option>Boutique en ligne</option>
+              <option>Appli ou outil sur mesure</option>
+              <option>Refonte d’un site existant</option>
+              <option>Maintenance d’un site existant</option>
+              <option>Logo ou identité visuelle</option>
+            <option value="other">Autre</option>
+          </select>
+        </div>
+        <div class="field field-other" id="field-other" hidden>
+          <label for="f-autre">Précise ton besoin *</label>
+          <input id="f-autre" name="autre" placeholder="Ex. : menu en ligne pour un restaurant">
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="f-langues">Langues du site <span class="opt">(facultatif)</span></label>
+            <select id="f-langues" name="langues">
+              <option value="">—</option>
+              <option>Français uniquement</option>
+              <option>Français + 1 langue</option>
+              <option>Français + 2 langues ou plus</option>
+              <option>Pas concerné</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-delai">Délai souhaité <span class="opt">(facultatif)</span></label>
+            <select id="f-delai" name="delai">
+              <option value="">—</option>
+              <option>Dès que possible</option>
+              <option>Dans 1 à 3 mois</option>
+              <option>Dans plus de 3 mois</option>
+              <option>Pas pressé</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-budget">Budget indicatif <span class="opt">(facultatif)</span></label>
+          <select id="f-budget" name="budget">
+            <option value="">—</option>
+              <option>Moins de 500 €</option>
+              <option>500 à 1 500 €</option>
+              <option>1 500 à 3 000 €</option>
+              <option>Plus de 3 000 €</option>
+              <option>Je ne sais pas encore</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-message">Ton projet *</label>
+          <textarea id="f-message" name="message" required placeholder="Ce que tu fais, ce que le site ou l’outil doit permettre, un site que tu aimes bien, ce que tu as déjà (logo, textes, photos, nom de domaine)…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Préparer ma demande</button>
+        <p class="form-note">En cliquant, ta messagerie s’ouvre avec la demande pré-remplie : il ne reste qu’à l’envoyer. Rien n’est enregistré sur ce site.</p>
+        <div id="form-done" class="form-done" hidden>
+          <p>Ta messagerie ne s’est pas ouverte ? Copie la demande et envoie-la à <a href="mailto:contact@mknstudio.fr">contact@mknstudio.fr</a>.</p>
+          <button type="button" data-copy data-ok="Copié ✓">Copier la demande</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year">2026</span> MKN Studio · Mohamed Mekhinini EI · SIREN 131 694 721</span>
+      <nav class="footer-nav">
+        <a href="https://www.facebook.com/mknstudio.fr" target="_blank" rel="noopener" aria-label="MKN Studio sur Facebook">Facebook</a>
+        <a href="/">Retour à l’accueil</a>
+        <a href="/mentions-legales.html">Mentions légales</a>
+        <a href="/confidentialite.html">Confidentialité</a>
+        <a href="#" data-consent-open>Gérer les cookies</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/main.js"></script>
+  <script src="/devis.js" defer></script>
+  <script src="/consent.js" defer></script>
+</body>
+</html>

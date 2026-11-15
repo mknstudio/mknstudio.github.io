@@ -21,5 +21,26 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://mknstudio.fr/de/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mknstudio.fr/"/>
   </url>
+  <url>
+    <loc>https://mknstudio.fr/devis.html</loc><lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mknstudio.fr/devis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mknstudio.fr/en/quote.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mknstudio.fr/de/angebot.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mknstudio.fr/devis.html"/>
+  </url>
+  <url>
+    <loc>https://mknstudio.fr/en/quote.html</loc><lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mknstudio.fr/devis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mknstudio.fr/en/quote.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mknstudio.fr/de/angebot.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mknstudio.fr/devis.html"/>
+  </url>
+  <url>
+    <loc>https://mknstudio.fr/de/angebot.html</loc><lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mknstudio.fr/devis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mknstudio.fr/en/quote.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mknstudio.fr/de/angebot.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mknstudio.fr/devis.html"/>
+  </url>
   <url><loc>https://mknstudio.fr/mitoya/</loc><lastmod>2026-11-11</lastmod></url>
 </urlset>
