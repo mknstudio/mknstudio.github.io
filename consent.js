@@ -51,17 +51,17 @@
     fr: {
       label: "Mesure d'audience",
       text: "Ce site mesure son audience avec Google Analytics, uniquement si vous l'acceptez. Votre choix est conservé 13 mois.",
-      more: "En savoir plus", href: "/confidentialite.html", deny: "Refuser", accept: "Accepter"
+      more: "Lire la politique de confidentialité", href: "/confidentialite.html", deny: "Refuser", accept: "Accepter"
     },
     en: {
       label: "Audience measurement",
       text: "This site measures its traffic with Google Analytics, only if you agree. Your choice is kept for 13 months.",
-      more: "Learn more", href: "/en/privacy.html", deny: "Decline", accept: "Accept"
+      more: "Read the privacy policy", href: "/en/privacy.html", deny: "Decline", accept: "Accept"
     },
     de: {
       label: "Reichweitenmessung",
       text: "Diese Website misst ihre Besucherzahlen mit Google Analytics, aber nur mit deiner Zustimmung. Deine Wahl wird 13 Monate lang gespeichert.",
-      more: "Mehr erfahren", href: "/de/datenschutz.html", deny: "Ablehnen", accept: "Akzeptieren"
+      more: "Datenschutzerklärung lesen", href: "/de/datenschutz.html", deny: "Ablehnen", accept: "Akzeptieren"
     }
   };
   var lang = (document.documentElement.lang || "fr").slice(0, 2).toLowerCase();

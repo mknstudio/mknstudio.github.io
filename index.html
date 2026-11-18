@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MKN Studio — Applis et logiciels utiles, faits en Alsace</title>
+  <title>MKN Studio — Applis, logiciels et création de sites en Alsace</title>
   <link rel="canonical" href="https://mknstudio.fr/">
   <meta property="og:url" content="https://mknstudio.fr/">
   <link rel="alternate" hreflang="fr" href="https://mknstudio.fr/">
@@ -13,7 +13,7 @@
   <meta property="og:locale" content="fr_FR">
   <meta property="og:locale:alternate" content="en_GB">
   <meta property="og:locale:alternate" content="de_DE">
-  <meta name="description" content="MKN Studio est un studio indépendant qui conçoit des applis mobiles et des logiciels en ligne simples et utiles : Vitanimo, Mitoya, Borne.">
+  <meta name="description" content="Studio indépendant en Alsace : applis et logiciels simples (Vitanimo, Mitoya, Borne) et création de sites vitrines pour artisans et commerçants.">
   <meta property="og:title" content="MKN Studio">
   <meta property="og:description" content="Des applis et des logiciels simples pour des problèmes concrets.">
   <meta property="og:type" content="website">
@@ -26,6 +26,8 @@
   <link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
   <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/bricolage-grotesque-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -33,7 +35,7 @@
   <script src="intro.js"></script>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a href="#top" class="logo" aria-label="MKN Studio, accueil">
+      <a href="#top" class="logo">
         <svg class="logo-svg" viewBox="0 0 120 100" aria-hidden="true"><path d="M4 94 L38 14 L72 94 Z" fill="#818CF8" stroke="#818CF8" stroke-width="8" stroke-linejoin="round"/><path d="M44 94 L78 30 L112 94 Z" fill="#A78BFA" fill-opacity="0.92" stroke="#A78BFA" stroke-opacity="0.92" stroke-width="8" stroke-linejoin="round"/><circle cx="96" cy="16" r="10" fill="#F97316"/></svg>
         <span class="logo-word">MKN<span>studio</span></span>
       </a>
@@ -60,12 +62,12 @@
       <div class="wrap">
         <a class="promo" data-until="2027-02-15" href="/devis.html">
           <span class="promo-tag">Offre de lancement</span>
-          <span class="promo-text"><strong>Une maquette simple de ton site, offerte.</strong> Je te montre à quoi ressemblera ta page d'accueil avant que tu t'engages : gratuit, sans obligation. Jusqu'au 15 février 2027.</span>
+          <span class="promo-text"><strong>Une maquette simple de ton site, offerte.</strong> Je te montre à quoi ressemblera ta page d'accueil avant que tu t'engages&nbsp;: gratuit, sans obligation. Jusqu'au 15 février 2027.</span>
           <span class="promo-go" aria-hidden="true">→</span>
         </a>
         <p class="eyebrow">Studio indépendant · Alsace</p>
         <h1>Des applis simples<br>pour des problèmes <em>concrets</em>.</h1>
-        <p class="lead">MKN Studio conçoit des applis mobiles et des logiciels en ligne qui règlent un vrai souci du quotidien, sans abonnement caché ni usine à gaz. Et il crée des sites sur mesure pour les pros, puis les maintient.</p>
+        <p class="lead">Je conçois des applis mobiles et des logiciels en ligne qui règlent un vrai souci du quotidien, sans abonnement caché ni usine à gaz. Je crée aussi des sites pour les pros, et je m'en occupe ensuite.</p>
         <div class="hero-actions">
           <a href="#applis" class="btn btn-primary">Voir les applis</a>
           <a href="#contact" class="btn btn-ghost">Me contacter</a>
@@ -84,10 +86,10 @@
           </div>
           <p class="kind">Appli mobile · Android</p>
           <h3>Vitanimo</h3>
-          <p>Le carnet de santé numérique de ton chat ou de ton chien : vaccins, traitements avec rappels, poids, documents, symptômes et dépenses. Fonctionne hors ligne, se partage avec tout le foyer et s'exporte en PDF pour le véto. Gratuite.</p>
+          <p>Le carnet de santé numérique de ton chat ou de ton chien&nbsp;: vaccins, traitements avec rappels, poids, documents, symptômes et dépenses. Fonctionne hors ligne, se partage avec tout le foyer et s'exporte en PDF pour le véto. Gratuite.</p>
           <div class="app-links">
             <a href="https://play.google.com/store/apps/details?id=app.vitanimo" class="store-link" target="_blank" rel="noopener">Google Play</a>
-            <a href="https://www.vitanimo.app" class="site-link" target="_blank" rel="noopener">vitanimo.app</a>
+            <a href="/vitanimo/" class="site-link">Découvrir Vitanimo</a>
             <span class="soon">App Store bientôt</span>
           </div>
         </article>
@@ -99,10 +101,10 @@
           </div>
           <p class="kind">Logiciel en ligne</p>
           <h3>Mitoya</h3>
-          <p>La gestion des petites copropriétés sans syndic professionnel : charges, décisions, documents et échanges entre copropriétaires, au même endroit. Rien à installer : tout se passe dans le navigateur.</p>
+          <p>La gestion des petites copropriétés sans syndic professionnel&nbsp;: charges, décisions, documents et échanges entre copropriétaires, au même endroit. Rien à installer&nbsp;: tout se passe dans le navigateur.</p>
           <div class="app-links">
             <a href="https://mitoya.fr" class="store-link" target="_blank" rel="noopener">mitoya.fr</a>
-            <a href="mitoya/" class="site-link">En savoir plus</a>
+            <a href="mitoya/" class="site-link">Découvrir Mitoya</a>
             <span class="soon">Appli mobile plus tard</span>
           </div>
         </article>
@@ -114,7 +116,7 @@
           </div>
           <p class="kind">Projet</p>
           <h3>Borne</h3>
-          <p>Pour les travailleurs frontaliers : compter ses jours de télétravail et hors zone, et voir venir les seuils fiscaux et sociaux avant de les dépasser. Allemagne et Suisse. Cahier des charges en cours.</p>
+          <p>Pour les travailleurs frontaliers&nbsp;: compter ses jours de télétravail et hors zone, et voir venir les seuils fiscaux et sociaux avant de les dépasser. Allemagne et Suisse. Cahier des charges en cours.</p>
         </article>
       </div>
     </section>
@@ -124,18 +126,18 @@
         <h2 class="section-title">Création et maintenance de sites</h2>
         <p class="lead work-lead">En plus de mes propres produits, je conçois des sites et des outils pour les commerces et indépendants de la région, et je m'en occupe ensuite pour qu'ils restent à jour.</p>
         <div class="services">
-          <div class="service"><h3>Conception</h3><p>Site vitrine ou outil sur mesure, pensé avec toi : textes, design, version mobile, plusieurs langues si besoin. Tu valides chaque étape.</p></div>
+          <div class="service"><h3>Conception</h3><p>Site vitrine ou outil sur mesure, pensé avec toi&nbsp;: textes, design, version mobile, plusieurs langues si besoin. Tu valides chaque étape.</p></div>
           <div class="service"><h3>Mise en ligne</h3><p>Nom de domaine, hébergement, adresse e-mail pro, référencement de base, fiche Google et mentions légales. Tu repars avec un site en état de marche.</p></div>
           <div class="service"><h3>Maintenance</h3><p>Mises à jour de contenu, corrections, sécurité, sauvegardes et petites évolutions. Un seul interlocuteur, joignable directement.</p></div>
         </div>
-        <p class="services-cta"><a href="/devis.html" class="btn btn-primary">Demander un devis</a></p>
+        <p class="services-cta"><a href="/devis.html" class="btn btn-primary">Demander un devis</a> <a href="/creation-site-vitrine/" class="btn btn-ghost">Voir l'offre en détail</a></p>
         <p class="work-sub">Réalisation</p>
         <a class="work-card" href="https://winnystudio.de" target="_blank" rel="noopener">
-          <span class="work-logo"><img src="assets/clients/winny-studio.png" alt="Logo Winny Studio"></span>
+          <span class="work-logo"><picture><source srcset="assets/clients/winny-studio.webp" type="image/webp"><img src="assets/clients/winny-studio.png" alt="Logo Winny Studio" width="35" height="58"></picture></span>
           <span class="work-body">
             <span class="work-title">Winny Studio</span>
             <span class="work-meta">Salon de manucure · Kandel, Allemagne</span>
-            <span class="work-text">Site bilingue allemand et anglais : prestations et tarifs modifiables sans toucher au code, galerie, créneaux libres affichés en direct et demande de rendez-vous confirmée sur WhatsApp. Avec un agenda interne pour l'équipe, en allemand et vietnamien, qui pilote les disponibilités affichées sur le site.</span>
+            <span class="work-text">Site bilingue allemand et anglais&nbsp;: prestations et tarifs modifiables sans toucher au code, galerie, créneaux libres affichés en direct et demande de rendez-vous confirmée sur WhatsApp. Avec un agenda interne pour l'équipe, en allemand et vietnamien, qui pilote les disponibilités affichées sur le site.</span>
             <span class="work-link">winnystudio.de ↗</span>
           </span>
           <span class="work-shot"><img src="assets/clients/winny-studio-site.jpg" alt="Page d'accueil du site Winny Studio" width="960" height="600" loading="lazy"></span>
@@ -166,7 +168,7 @@
     <section id="contact" class="contact">
       <div class="wrap">
         <h2 class="section-title">Contact</h2>
-        <p class="lead">Un projet de site, une maintenance à reprendre, une question sur une appli ou un bug ? Écris-moi, je réponds sous 48 h.</p>
+        <p class="lead">Un projet de site, une maintenance à reprendre, une question sur une appli ou un bug&nbsp;? Écris-moi, je réponds sous 48 h.</p>
         <a class="contact-mail" href="mailto:contact@mknstudio.fr" data-todo="adresse e-mail">contact@mknstudio.fr</a>
         <p class="services-cta" style="margin:32px 0 0"><a href="/devis.html" class="btn btn-ghost">Demander un devis</a></p>
       </div>

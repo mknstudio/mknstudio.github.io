@@ -26,6 +26,8 @@
   <link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
   <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/bricolage-grotesque-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/fonts.css">
   <link rel="stylesheet" href="/styles.css">
 </head>
@@ -33,7 +35,7 @@
   <script src="/intro.js"></script>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a href="#top" class="logo" aria-label="MKN Studio, Startseite">
+      <a href="#top" class="logo">
         <svg class="logo-svg" viewBox="0 0 120 100" aria-hidden="true"><path d="M4 94 L38 14 L72 94 Z" fill="#818CF8" stroke="#818CF8" stroke-width="8" stroke-linejoin="round"/><path d="M44 94 L78 30 L112 94 Z" fill="#A78BFA" fill-opacity="0.92" stroke="#A78BFA" stroke-opacity="0.92" stroke-width="8" stroke-linejoin="round"/><circle cx="96" cy="16" r="10" fill="#F97316"/></svg>
         <span class="logo-word">MKN<span>studio</span></span>
       </a>
@@ -102,7 +104,7 @@
           <p>Verwaltungssoftware für kleine Eigentümergemeinschaften in Frankreich (copropriétés), die ohne professionellen Verwalter auskommen: Nebenkosten, Beschlüsse, Dokumente und Austausch zwischen den Eigentümern an einem Ort. Nichts zu installieren, alles läuft im Browser. Auf Französisch verfügbar.</p>
           <div class="app-links">
             <a href="https://mitoya.fr" class="store-link" target="_blank" rel="noopener">mitoya.fr</a>
-            <a href="/mitoya/" class="site-link" hreflang="fr">Mehr erfahren (FR)</a>
+            <a href="/mitoya/" class="site-link" hreflang="fr">Mehr über Mitoya (FR)</a>
             <span class="soon">Mobile App später</span>
           </div>
         </article>
@@ -131,7 +133,7 @@
         <p class="services-cta"><a href="/de/angebot.html" class="btn btn-primary">Angebot anfragen</a></p>
         <p class="work-sub">Referenz</p>
         <a class="work-card" href="https://winnystudio.de" target="_blank" rel="noopener">
-          <span class="work-logo"><img src="/assets/clients/winny-studio.png" alt="Logo von Winny Studio"></span>
+          <span class="work-logo"><picture><source srcset="/assets/clients/winny-studio.webp" type="image/webp"><img src="/assets/clients/winny-studio.png" alt="Logo von Winny Studio" width="35" height="58"></picture></span>
           <span class="work-body">
             <span class="work-title">Winny Studio</span>
             <span class="work-meta">Nagelstudio · Kandel</span>
