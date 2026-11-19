@@ -19,7 +19,7 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://mknstudio.fr/logo-512.png">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Organization","name":"MKN Studio","url":"https://mknstudio.fr/","logo":"https://mknstudio.fr/logo-512.png","email":"contact@mknstudio.fr","description":"Création de sites internet sur mesure et développement d'applications web et mobiles en Alsace.","address":{"@type":"PostalAddress","addressLocality":"Stotzheim","postalCode":"67140","addressRegion":"Alsace","addressCountry":"FR"},"areaServed":"Alsace","sameAs":["https://www.facebook.com/mknstudio.fr","https://www.instagram.com/mknstudio.fr/"]}
+  {"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://mknstudio.fr/#business", "name": "MKN Studio", "url": "https://mknstudio.fr/", "logo": "https://mknstudio.fr/logo-512.png", "image": "https://mknstudio.fr/logo-512.png", "description": "Création de sites internet sur mesure et développement d'applications web et mobiles en Alsace.", "email": "contact@mknstudio.fr", "telephone": "+33663972236", "founder": {"@type": "Person", "name": "Mohamed Mekhinini"}, "address": {"@type": "PostalAddress", "addressLocality": "Stotzheim", "postalCode": "67140", "addressRegion": "Grand Est", "addressCountry": "FR"}, "geo": {"@type": "GeoCoordinates", "latitude": 48.378, "longitude": 7.493}, "areaServed": [{"@type": "AdministrativeArea", "name": "Bas-Rhin"}, {"@type": "AdministrativeArea", "name": "Haut-Rhin"}], "knowsLanguage": ["fr", "en", "de"], "sameAs": ["https://www.facebook.com/mknstudio.fr", "https://www.instagram.com/mknstudio.fr/", "https://www.linkedin.com/company/mkn-studio"], "inLanguage": "fr"}, {"@type": "SoftwareApplication", "name": "Vitanimo", "applicationCategory": "LifestyleApplication", "operatingSystem": "Android", "url": "https://mknstudio.fr/vitanimo/", "downloadUrl": "https://play.google.com/store/apps/details?id=app.vitanimo", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "publisher": {"@id": "https://mknstudio.fr/#business"}}, {"@type": "WebApplication", "name": "Mitoya", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "browserRequirements": "Requires a modern web browser", "url": "https://mitoya.fr", "publisher": {"@id": "https://mknstudio.fr/#business"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Combien coûte un site internet ?", "acceptedAnswer": {"@type": "Answer", "text": "Le prix dépend du nombre de pages et des fonctions dont vous avez besoin (prise de rendez-vous, plusieurs langues, boutique). Le devis est gratuit et sans engagement, avec une réponse sous 48 h. Jusqu'au 15 février 2027, une maquette simple de votre page d'accueil est offerte."}}, {"@type": "Question", "name": "Mon site sera-t-il visible sur Google ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. La mise en ligne comprend le référencement de base et la création ou la mise à jour de votre fiche Google, pour que les clients de votre secteur vous trouvent."}}, {"@type": "Question", "name": "Pouvez-vous reprendre un site existant ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Nous pouvons refaire un site existant ou simplement reprendre sa maintenance : mises à jour, corrections, sécurité et sauvegardes."}}, {"@type": "Question", "name": "Je n'ai pas de logo, est-ce un problème ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Nous pouvons créer votre logo et votre identité visuelle en même temps que le site."}}, {"@type": "Question", "name": "Intervenez-vous dans toute l'Alsace ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. MKN Studio est installé à Stotzheim, dans le Bas-Rhin, et travaille avec les professionnels du Bas-Rhin comme du Haut-Rhin. Tout peut aussi se faire à distance, et les sites peuvent être en plusieurs langues."}}, {"@type": "Question", "name": "Développez-vous aussi des applications ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. MKN Studio développe des applications web et mobiles sur mesure, comme Vitanimo, le carnet de santé des chats et chiens, ou Mitoya, le logiciel de gestion des petites copropriétés."}}]}]}
   </script>
   <link rel="icon" href="/favicon.ico" sizes="48x48">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -99,6 +99,11 @@
           </span>
           <span class="work-shot"><img src="assets/clients/winny-studio-site.jpg" alt="Page d'accueil du site Winny Studio" width="960" height="600" loading="lazy"></span>
         </a>
+        <div class="reviews" id="avis" hidden data-todo="lien fiche Google Business Profile">
+          <p class="work-sub">Avis clients</p>
+          <p class="reviews-text">Vous avez travaillé avec MKN Studio&nbsp;? Votre avis sur Google aide d'autres artisans et commerçants à nous trouver.</p>
+          <p class="services-cta"><a href="#" data-gbp="view" class="btn btn-ghost" target="_blank" rel="noopener">Voir les avis Google</a> <a href="#" data-gbp="review" class="btn btn-primary" target="_blank" rel="noopener">Laisser un avis</a></p>
+        </div>
       </div>
     </section>
 
@@ -164,6 +169,20 @@
             <h3>Conçu et maintenu en France</h3>
             <p>Un studio indépendant installé en Alsace, joignable directement, sans service client en boucle.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq-home">
+      <div class="wrap">
+        <h2 class="section-title">Questions fréquentes</h2>
+        <div class="faq">
+          <details><summary>Combien coûte un site internet ?</summary><p>Le prix dépend du nombre de pages et des fonctions dont vous avez besoin (prise de rendez-vous, plusieurs langues, boutique). Le devis est gratuit et sans engagement, avec une réponse sous 48 h. Jusqu'au 15 février 2027, une maquette simple de votre page d'accueil est offerte.</p></details>
+          <details><summary>Mon site sera-t-il visible sur Google ?</summary><p>Oui. La mise en ligne comprend le référencement de base et la création ou la mise à jour de votre fiche Google, pour que les clients de votre secteur vous trouvent.</p></details>
+          <details><summary>Pouvez-vous reprendre un site existant ?</summary><p>Oui. Nous pouvons refaire un site existant ou simplement reprendre sa maintenance : mises à jour, corrections, sécurité et sauvegardes.</p></details>
+          <details><summary>Je n'ai pas de logo, est-ce un problème ?</summary><p>Non. Nous pouvons créer votre logo et votre identité visuelle en même temps que le site.</p></details>
+          <details><summary>Intervenez-vous dans toute l'Alsace ?</summary><p>Oui. MKN Studio est installé à Stotzheim, dans le Bas-Rhin, et travaille avec les professionnels du Bas-Rhin comme du Haut-Rhin. Tout peut aussi se faire à distance, et les sites peuvent être en plusieurs langues.</p></details>
+          <details><summary>Développez-vous aussi des applications ?</summary><p>Oui. MKN Studio développe des applications web et mobiles sur mesure, comme Vitanimo, le carnet de santé des chats et chiens, ou Mitoya, le logiciel de gestion des petites copropriétés.</p></details>
         </div>
       </div>
     </section>

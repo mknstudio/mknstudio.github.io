@@ -317,3 +317,14 @@ img.app-icon { display: block; object-fit: cover; }
 .hero-site .lead { max-width: 60ch; }
 .hero-site .hero-more { font-size: clamp(16px, 1.6vw, 18px); margin-top: 16px; }
 .hero-ask { font-family: var(--font-display); font-weight: 700; font-size: clamp(20px, 2.4vw, 26px); margin: 32px 0 0; color: var(--ink); }
+
+/* FAQ page d'accueil */
+.faq-home .faq { margin-top: 32px; }
+.faq-home .faq details { border-top: 1px solid var(--line); padding: 18px 0; max-width: 72ch; }
+.faq-home .faq details:last-child { border-bottom: 1px solid var(--line); }
+.faq-home .faq summary { cursor: pointer; font-weight: 600; color: var(--ink); font-size: 18px; }
+.faq-home .faq p { margin: 10px 0 0; color: var(--ink-soft); }
+
+/* Avis Google */
+.reviews { margin-top: 48px; }
+.reviews-text { color: var(--ink-soft); max-width: 60ch; margin: 8px 0 0; }
