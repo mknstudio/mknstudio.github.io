@@ -311,3 +311,9 @@ img.app-icon { display: block; object-fit: cover; }
 .landing .cta-band { margin-top: 72px; padding: 32px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); }
 .landing .cta-band p { margin: 0 0 20px; color: var(--ink-soft); max-width: 58ch; }
 .landing .app-hero-icon { width: 72px; height: 72px; border-radius: 18px; margin-bottom: 24px; }
+
+/* Hero orienté création de sites */
+.hero-site h1 { font-size: clamp(38px, 6.2vw, 74px); max-width: 17ch; }
+.hero-site .lead { max-width: 60ch; }
+.hero-site .hero-more { font-size: clamp(16px, 1.6vw, 18px); margin-top: 16px; }
+.hero-ask { font-family: var(--font-display); font-weight: 700; font-size: clamp(20px, 2.4vw, 26px); margin: 32px 0 0; color: var(--ink); }
